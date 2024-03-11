@@ -350,3 +350,23 @@ header,
 }
 
 /* Section -3 styles */
+
+.sec-3
+{
+    background-color:#252B42
+}
+
+.sec-3-cntnr
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10% 0;
+    
+}
+.sec-3-cntnt
+{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}	
