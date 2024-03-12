@@ -27,6 +27,7 @@
     font-weight: 700;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 
 }
@@ -370,3 +371,247 @@ header,
     flex-direction: column;
     gap: 35px;
 }	
+
+
+/* section 3 ends here */
+/* Styling for section 4 */
+
+.sec-4-bdy-cntnr
+{
+    box-shadow: 0px 13px 19px 0px #00000012;
+    
+
+}
+.sec-4-bdy-sub-cntnr
+{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 40px;
+    position: relative;
+}
+.sec-4-bdy-sub-cntnr ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    align-items: start;
+    justify-content: center;
+    padding-bottom:60px;
+}
+.sec-4-bdy-sub-cntnr ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.sec-4-bdy
+{
+    display: flex;
+    justify-content: space-between;
+}
+.sec-4-bdy-icon
+{
+    width: 10%;
+    height: 10%;
+    padding:7px 8px 1px 8px; 
+     border-radius:50%;
+    background-color: #5D5DF9;
+    
+}
+.sec-4-bdy-sub-cntnr h3 , ul>li{
+    color: #252B42;
+
+}
+.sec-4-bdy-sub-cntnr h6 , p{
+    color:  #737373;
+    
+}
+.sec-4-price h2
+{
+    color: #1BC768;
+
+}
+.sec-4-price h6{
+    color:#8EC2F2;
+
+}
+.sec-4-bdy-sub-cntnr ul :nth-child(1) span,.sec-4-bdy-sub-cntnr ul :nth-child(2) span,.sec-4-bdy-sub-cntnr ul :nth-child(3) span
+{
+    color: #1BC768;
+}
+.sec-4-bdy-sub-cntnr ul :nth-child(4) span,.sec-4-bdy-sub-cntnr ul :nth-child(5) span
+{
+    color:#BDBDBD;
+
+}
+.sec-4-bdy-sub-cntnr ul :nth-child(5) 
+{
+ display: flex;
+} 
+
+.cntnr-new-icon
+{
+    display: inline-block;
+    background-color: #E77C40;
+    border-radius: 50%;
+    padding: 20px 15px 20px 15px;
+    position: absolute;
+    left: 88%;
+    top: -5%;
+    
+
+}
+
+/* Section-5 designs */
+.sec-5-bdy
+{
+    display: flex;
+}
+.sec-5-bdy-cntnr
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+.sec-5-bdy-cntnr img{
+    width: 25%;
+    height: 51%;
+    border-radius: 50%;
+}
+.cntnr-card-cntnt
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.cntnr-card-cntnt p, .name-desig h6
+{
+    color: #737373;
+
+}
+.cntn_stars
+{
+    display: flex;
+    gap: 10px;
+    
+    
+}
+
+.cntn_stars i{
+    color:   #F3CD03;
+}
+
+.name-desig
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.name-desig h5
+{
+    color:  #252B42;
+    
+}
+
+/* Section 5 styling completed */
+/* Section 6 News letter */
+
+.sec-6
+{
+    background-color:#26335D;
+    
+}
+
+.sec-6-hd
+{
+    align-items: center;
+}
+.sec-6-hd h2 , .sec-6-hd p{
+    color: #fff;
+}
+
+.sec-6-bdy{
+    display: flex;
+    justify-content: center;
+}
+
+.sec-6-bdy form{
+    display: flex;
+    width: 75%;
+   
+    gap: 0px;
+    position: relative;
+}
+.sec-6-bdy form input
+{
+    border-right: #1BC768;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+.sec-6-bdy form button
+{
+    position: absolute;
+    left: 88%;
+}
+
+
+/* Section ends Here */
+/* Styling for footer section */
+.ftr-col
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.ftr-col h5{
+    color: #252B42;
+
+}
+.ftr-col-link ul {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+.ftr-col-link ul{
+    list-style: none;
+}
+
+.ftr-col-link ul li a{
+    text-decoration: none;
+    color: #737373;
+    ;
+}
+
+.ftr-diplay
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cntnr-row
+{
+    display: flex;
+    justify-content: space-between;
+}
+.row-cntnt
+{
+    flex: 2;
+}
+.row-cntnt h6{
+    color: #737373;
+    ;
+}
+
+.social-media a i{
+    color: #1BC768;
+}
