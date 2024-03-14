@@ -384,12 +384,22 @@ header,
     color: #252B42;
 }
 
-.disp-cntnr-1 a {
+/* .disp-cntnr-1 a {
     color: #1BC768;
     text-decoration: none;
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
+} */
+.disp-cntnr-1 h5 {
+    color: #1BC768;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 110px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .rtng {
