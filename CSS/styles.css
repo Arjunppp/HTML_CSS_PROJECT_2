@@ -15,9 +15,9 @@
     margin: 0 auto;
 }
 
-.container2 {
+.container.container-banner {
     max-width: 1150px;
-    margin: 0 auto;
+   
 }
 
 .btn_common {
@@ -93,9 +93,18 @@
     font-size: 14px;
     line-height: 20px;
 }
+.h3-style {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+
+}
+img{
+    width: 100%;
+}
 
 /* Header  section styling */
-header,
+.header,
 .bnr {
     background-color: #26335D;
 
@@ -115,29 +124,30 @@ header,
 }
 
 
-.nav-bar ul {
+.page-list {
     display: flex;
     list-style: none;
     flex: 1;
     gap: 5%;
 }
 
-.nav-bar ul li a {
+.page-list-link {
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
+    padding: 10px;
 }
 
 .Hdr-btn {
     display: flex;
     align-items: center;
     padding-right: 30px;
-    gap: 45px;
+    gap: 20px;
 }
 
 
-.btn-login {
+.btn-trnsprnt {
     background: transparent;
 }
 
@@ -156,12 +166,7 @@ header,
     color: #1BC678;
 }
 
-.nav-bar h3 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
 
-}
 
 /* Styling for banner container */
 
@@ -177,9 +182,6 @@ header,
     flex: 1;
 }
 
-.bnr-img img {
-    width: 100%;
-}
 
 .bnr_cntnt {
     display: flex;
@@ -212,7 +214,7 @@ header,
 .bnr_cntnt h4 {
     font-size: 20px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: 400;
     max-width: 77%;
 }
 
@@ -731,11 +733,7 @@ hr.hrzntl-rule.hrzntl-sec-3 {
 
 }
 
-.cntnr-new-icon h3 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-}
+
 
 /* Section-5 designs */
 .sec-5-bdy {
