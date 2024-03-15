@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     gap: 70px;
-    padding: 120px 0;
+   
 }
 
 .sec-hd {
@@ -68,6 +68,13 @@
     font-weight: 700;
     line-height: 50px;
 
+}
+
+.h2-style
+{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
 }
 
 .sec-hd p {
@@ -102,7 +109,9 @@
 img{
     width: 100%;
 }
-
+.common-sec{
+    padding: 120px 0;
+}
 /* Header  section styling */
 .header,
 .bnr {
