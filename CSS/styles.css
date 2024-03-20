@@ -147,8 +147,7 @@ img {
 }
 
 /* Header  section styling */
-.header,
-.bnr {
+.cloud-brst-bck-clr {
     background-color: #26335D;
 
 }
@@ -161,7 +160,6 @@ img {
     padding: 2% 0;
 }
 
-.nav-bar>h3:hover,
 .nav-bar>ul>li>a:hover {
     color: #1BC678;
 }
@@ -517,7 +515,10 @@ i.fa-solid.fa-star.fnt {
     font-size: 14px;
     color: #1BC768;
 }
-
+.sec-pricing-bdy-sub-cntnr button:hover {
+    border: 1px solid #1BC768;
+    color: #1BC768;
+}
 /* Section -3 styles */
 
 .sec-rfrnce {
@@ -779,6 +780,12 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     border: 1px solid #fff;
 
 }
+.sec-news-lttr-bdy form button:hover
+{
+    color:#1BC678 ;
+    background-color:#26335D ;
+    
+}
 
 .sec-hd.sec-news-lttr-hd p {
     max-width: 46%;
@@ -925,6 +932,10 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .bnr_cntnt {
         align-items: center;
     }
+    .container
+    {
+        padding: 0 15 px;
+    }
 }
 
 @media(max-width : 850px) {
@@ -1013,6 +1024,10 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .sec-expert-bdy {
         flex-direction: column;
     }
+    .sec-onln-apptmnt-bdy-itm p
+    {
+        max-width: 200px;
+    }
 
 }
 
@@ -1092,170 +1107,8 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
 
     }
-    
 
 
-}
-
-/*
-@media (max-width:830px)
-{
-   img 
-   {
-    object-fit: none;
-   }
-
-    }
-    .nav-bar
-    {
-        gap:10px;
-    }
-    .Hdr-btn
-    {
-        gap: 10px;
-    }
-
-    .page-list
-    {
-        gap: 10px;
-    }
-    .btn_common
-    {
-        padding: 10px 15px;
-        gap: 5px;
-    }
-    .bnr_cntnr
-    {
-        flex-direction: column;
-
-    }
-    .bnr_cntnt
-    {
-        align-items: center;
-    }
-    .ftr-top-cntnr
-    {
-        grid-template-columns: repeat(2 ,1fr);
-    }
-    .sec-onln-apptmnt-bdy
-    {
-        flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-   
-    } 
-   
-    
-    .pos-rltv {
-        top: 0px;
-
-
-    }
-    .h1-style {
-        font-size: 44px;
-        line-height: 60px;
-        
-    }
-    
-    .h2-style {
-        
-        font-size: 30px;
-        line-height: 35px;
-    }
-    
-    .h3-style {
-       
-        font-size: 18px;
-        line-height: 25px;
-    
-    }
-    
-    .h4-style {
-        font-size: 15px;
-        line-height: 15px;
-        
-    }
-    
-    .h5-style {
-        font-size: 12px;
-        line-height: 16px;
-        
-    }
-    
-    .h6-style {
-        font-size: 10px;
-        line-height: 14px;
-        
-    
-    }
-
-@media (max-width : 760px)
-{
-    .sec-rfrnce-img ,.bnr-img
-    {
-        display: none;
-    }
-    .bnr_cntnt ,.sec-hd, .sec-rfrnce-sub-cntnt
-    {
-        align-items: center;
-    text-align: center;
-    }
-
-    .sec-pricing-bdy
-    {
-        flex-direction: column;
-        justify-content: center;
-    }
-    .sec-expert-bdy
-    {
-        flex-direction: column;
-    }
-    .page-list
-    {
-        display: none;
-    }
-    .sec-pricing-bdy {
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        align-items: center;
-    }
-    .sec-pricing-price p
-    {
-     max-width: 255px;
-    }
-    .sec-pricing-price button{
-        width: 125px;
-    }
 
 }
-@media (max-width :650px)
-{
-    .sec-sales-bdy {
-        grid-template-columns: repeat(1, 1fr);
-        align-self: center;
-    }
-    .ftr-top-cntnr {
-        grid-template-columns: repeat(1, 1fr);
-        
-        justify-self: center;
-    }
-    .ftr-btm-cntnt
-    {
-        flex-direction: column-reverse;
-        align-items: center ;
-        gap: 30px;
-    }
-    .cntr-col
-    {
-        display: inline-flex;
-        align-items: center;
-    }
-    .cntr-col-cntct
-    {
-        display: inline-flex;
-        align-items: center;
 
-    }
-} */
