@@ -62,6 +62,7 @@
 img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 
@@ -361,7 +362,7 @@ img {
 
 .sec-sales-div {
     position: absolute;
-    bottom: 275px;
+    top: 25px;
     left: 25px;
 }
 
@@ -424,9 +425,8 @@ img {
 }
 
 .sec-sales-bdy-grid-item-discrptn>p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+   
+   
     max-width: 200px;
 }
 
@@ -760,6 +760,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
 .sec-news-lttr-bdy form {
     display: flex;
+    max-width: 100%;
     width: 100%;
     justify-content: center;
     gap: 0px;
@@ -769,8 +770,8 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 .sec-news-lttr-bdy form input {
     border-right: #1BC768;
     padding: 18px;
-    max-width: 100%;
-    width: 50%;
+    
+    width: 60%;
     border-radius: 5px 0px 0px 5px;
     border: none;
 }
@@ -885,7 +886,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
 /* Media queries */
 
-@media (max-width:1020px) {
+@media screen and (max-width:1020px) {
     .sec-sales-bdy {
 
         grid-template-columns: repeat(2, 1fr);
@@ -912,6 +913,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .sec-hd {
         display: inline-flex;
         align-items: center;
+        text-align: center;
     }
 
     .sec-hd p {
