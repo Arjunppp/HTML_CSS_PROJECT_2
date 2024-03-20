@@ -938,6 +938,11 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     {
         padding: 0 15 px;
     }
+    .sec-onln-apptmnt-bdy-itm {
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
 }
 
 @media(max-width : 850px) {
