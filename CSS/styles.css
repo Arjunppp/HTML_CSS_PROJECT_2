@@ -1081,6 +1081,10 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .sec-sales-bdy-grid-item-discrptn>h5 {
         max-width: 85%;
     }   
+    .hrzntl-rule
+    {
+        width: 80px;
+    }
 
 }
 
@@ -1151,6 +1155,16 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     .nav-bar {
         justify-content: center;
+        gap: 30px;
+    }
+    .bnr_cntnt .h1-style
+    {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .bnr_cntnt .h4-style
+    {
+        font-size: 15px;
     }
 
     .sec-sales-bdy {
