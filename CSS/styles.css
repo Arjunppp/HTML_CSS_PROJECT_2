@@ -1189,7 +1189,12 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
 
     }
-
+    .sec-hd.sec-news-lttr-hd p {
+        max-width: 71%;
+    }
+    .sec-rfrnce-sub-cntnt p {
+        max-width: 83%;
+    }
 
 
 }
