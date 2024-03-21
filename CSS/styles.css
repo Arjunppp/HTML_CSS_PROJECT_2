@@ -1,8 +1,20 @@
+:root
+{
+    --primary-color :#fff;
+    --primary-font : "Montserrat", sans-serif;
+    --banner-background : #26335D;
+    --common-sec-padding : 120px 0;
+    --cmn-bx-shdw : 0px 13px 19px 0px #00000012
+
+}
+
+
+
 /* Common stylings  */
 
 * {
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
 }
 
 .common-mar-pad {
@@ -13,6 +25,7 @@
 .container {
     max-width: 1050px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .container.container-banner {
@@ -67,7 +80,7 @@ img {
 
 
 .common-sec {
-    padding: 120px 0;
+    padding: var(--common-sec-padding);
 }
 
 .h1-style {
@@ -149,7 +162,7 @@ img {
 
 /* Header  section styling */
 .cloud-brst-bck-clr {
-    background-color: #26335D;
+    background-color:  var(--banner-background);
 
 }
 
@@ -268,7 +281,7 @@ img {
     flex-direction: column;
     gap: 20px;
     padding: 35px 40px;
-    box-shadow: 0px 13px 19px 0px #00000012;
+    box-shadow: var(--cmn-bx-shdw);
 
 
 
@@ -892,6 +905,14 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         grid-template-columns: repeat(2, 1fr);
         display: inline-grid;
     }
+    .bnr-img img  {
+        width: 75%
+
+    }
+    .bnr-img
+    {
+        text-align: center;
+    }
 
     .sec-sales-bdy-grid {
 
@@ -934,15 +955,25 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .bnr_cntnt {
         align-items: center;
     }
-    .container
-    {
-        padding: 0 15 px;
-    }
+    
     .sec-onln-apptmnt-bdy-itm {
         align-items: center;
         padding: 15px 0px;
         text-align: center;
     }
+    .bnr_cntnt .h5-style
+    {
+        line-height: 13px;
+    }
+    .bnr_cntnt .h1-style
+    {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .sec-onln-apptmnt-bdy-itm  .p-style {
+
+     max-width: 200px;  
+    };
 }
 
 @media(max-width : 850px) {
@@ -1096,7 +1127,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .Hdr-btn :nth-child(2) {
+    .Hdr-btn :nth-child(1) {
         display: none;
     }
 
