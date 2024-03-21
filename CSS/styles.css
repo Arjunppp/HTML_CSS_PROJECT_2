@@ -964,11 +964,13 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .bnr_cntnt .h5-style
     {
         line-height: 13px;
+        text-align: center;
     }
     .bnr_cntnt .h1-style
     {
         font-size: 60px;
         line-height: 60px;
+        text-align: center;
     }
     .sec-onln-apptmnt-bdy-itm  .p-style {
 
