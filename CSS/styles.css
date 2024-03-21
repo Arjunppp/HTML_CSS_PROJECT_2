@@ -980,9 +980,13 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 }
 
 @media(max-width : 850px) {
-    .h1-style {
+    .bnr_cntnt .h1-style {
         font-size: 40px;
         line-height: 40px;
+    }
+    .bnr_cntnt .h4-style
+    {
+        font-size: 18px;
     }
 
     .h2-style {
@@ -1015,13 +1019,13 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     }
 
     .page-list {
-        gap: 10px;
+       
         justify-content: space-around;
     }
 
     .btn_common {
         padding: 10px 15px;
-        font-size: 10px;
+        font-size: 13px;
         line-height: 18px;
     }
 
@@ -1069,6 +1073,14 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     {
         max-width: 200px;
     }
+    .Hdr-btn
+    {
+        gap :6px;
+        padding-right: 0px;
+    }
+    .sec-sales-bdy-grid-item-discrptn>h5 {
+        max-width: 85%;
+    }   
 
 }
 
