@@ -1123,9 +1123,24 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         padding: 0;
     }
 
-    .page-list :nth-child(3),
-    .page-list :nth-child(4) {
+    .Hdr-btn :first-child
+    {
         display: none;
+    }
+    .nav-bar ,.page-list
+    {
+        gap: 0px;
+    }
+
+    .Hdr-btn button 
+    {
+        padding: 7px 10px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .page-list link 
+    {
+        padding: 8px;
     }
 }
 
