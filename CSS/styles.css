@@ -1305,6 +1305,8 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     .hme-drp-dwn {
        display: none;
+       list-style: none;
+       
         
     }
     .hme-drp-dwn a
@@ -1317,6 +1319,10 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
 
     }
+    .hme-drp-dwn li 
+    {
+        padding-left :20px;
+    }
    
 
     #hmbrgr:checked~.nav-bar ul.page-list {
@@ -1326,7 +1332,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         position: fixed;
         left: 0px;
         top: 6%;    
-        width: 50%;
+        width: 60%;
         height: 100vh;
         background-color: #26335D;
         
@@ -1346,9 +1352,9 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         display: inline-flex;
         flex-direction: column;
         
-        width: 100%;
+        width: 90%;
         margin: 0;
-        padding: 0;
+        padding: 10px;
         box-shadow: 1px 1px 5px #fff;
 
 
@@ -1357,11 +1363,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .sub-drp-dwn {
         list-style: none;
     }
-    .sub-drp-dwn a
-    {
-        text-decoration: none;
-    }
-
+    
     .page-list li a
     {
         display: flex;
