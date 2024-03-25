@@ -1175,7 +1175,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     .hme-drp-dwn {
         list-style: none;
-        width: 115%;
+       
         visibility: hidden;
         display: inline-flex;
         flex-direction: column;
