@@ -1285,10 +1285,12 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     header .container {
         position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         display: flex;
         align-items: center;
-       
+       height: 60px;
         background-color: #26335D;
         justify-content: center;
         z-index: 1;
@@ -1320,12 +1322,12 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     #hmbrgr:checked~.nav-bar ul.page-list {
         display: inline-flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         position: fixed;
         left: 0px;
         top: 6%;    
-        width: 75%;
-        height: 20vh;
+        width: 50%;
+        height: 40vh;
         background-color: #26335D;
         
 
