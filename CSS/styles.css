@@ -1333,10 +1333,11 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         
 
     }
-    /* #hmbrgr:checked~.nav-bar ul.page-list :nth-child(1)::before
-    {
-        background:url("images/home.png");
-    } */
+     #hmbrgr:checked~header .container label::before
+    { 
+      
+       content: '\f00d';
+    } 
   
     .nav-bar ul li {
         position: relative;
