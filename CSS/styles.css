@@ -1175,19 +1175,16 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     .hme-drp-dwn {
         list-style: none;
-        margin-top: -50px;
-        margin-left: 20px;
+        width: 115%;
         visibility: hidden;
         display: inline-flex;
         flex-direction: column;
-        gap: 10px;
+       
         padding: 10px;
         position: absolute;
-        top: 100%;
-        left: 10%;
-        opacity: 0;
+       
         border-radius: 5px;
-        box-shadow: 1px 1px 5px #fff;
+       
         background-color: #26335D;
         transition: all 0.3s;
 
@@ -1201,9 +1198,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .nav-bar ul li:hover .hme-drp-dwn {
 
         visibility: visible;
-        margin-top: 0px;
-        margin-left: 0px;
-        box-shadow: 1px 1px 5px #fff;
+       
         opacity: 1;
 
 
@@ -1218,10 +1213,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         position: relative;
     }
 
-    .hme-drp-dwn li a {
-        display: flex;
-
-    }
+  
 
     .page-list li a {
         display: flex;
@@ -1238,9 +1230,9 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         padding: 10px;
 
         background-color: #26335D;
-        box-shadow: 1px 1px 5px #fff;
+       
         border-radius: 5px;
-        left: 109%;
+        left: 102%;
         top: 30%;
         opacity: 0;
 
