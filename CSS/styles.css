@@ -23,6 +23,11 @@ header .container label {
     display: none;
 }
 
+.material-symbols-outlined.close-icn
+{
+    display: none;
+}
+
 
 
 .common-mar-pad {
@@ -1259,6 +1264,21 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 }
 
 @media (max-width:515px) {
+    ul.sub-drp-dwn
+    {
+        display: none;
+    }
+    ul.hme-drp-dwn li:hover ul.sub-drp-dwn {
+       display: flex;
+       flex-direction: column;
+    }
+    .nav-bar ul li:hover .material-symbols-outlined.arrow-icon-1 {
+        transform: rotate(180deg);
+    }
+    ul.hme-drp-dwn li:hover .material-symbols-outlined.arrow-icon {
+
+        transform: rotate(180deg);
+    }
     header .container label {
         display: block;
     }
@@ -1282,7 +1302,12 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     }
 
     .hme-drp-dwn {
-        display: none;
+       display: none;
+        
+    }
+    .hme-drp-dwn a
+    {
+        text-decoration: none;
     }
 
     .nav-bar ul.page-list {
@@ -1295,32 +1320,45 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     #hmbrgr:checked~.nav-bar ul.page-list {
         display: inline-flex;
         flex-direction: column;
+        justify-content: center;
         position: fixed;
         left: 0px;
         top: 6%;    
         width: 75%;
-        height: 100vh;
+        height: 20vh;
         background-color: #26335D;
         
 
     }
+    /* #hmbrgr:checked~.nav-bar ul.page-list :nth-child(1)::before
+    {
+        background:url("images/home.png");
+    } */
   
     .nav-bar ul li {
         position: relative;
     }
 
     .nav-bar ul li:hover .hme-drp-dwn {
+        
         display: inline-flex;
         flex-direction: column;
-        position: absolute;
-        top: 0px;
-        left: 10px;
+        align-items: flex-start;
+       justify-content: center;
+        width: 100%;
         margin: 0;
         padding: 0;
         box-shadow: 1px 1px 5px #fff;
 
 
 
+    }
+    .sub-drp-dwn {
+        list-style: none;
+    }
+    .sub-drp-dwn a
+    {
+        text-decoration: none;
     }
 
     .page-list li a
@@ -1368,6 +1406,12 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     .sec-rfrnce-sub-cntnt p {
         max-width: 83%;
+    }
+
+
+    .hmbrgr:checked .material-symbols-outlined.close-icn
+    {
+        display: block;
     }
 
 
