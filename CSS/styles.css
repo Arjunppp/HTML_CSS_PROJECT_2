@@ -1231,8 +1231,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .sub-drp-dwn {
         list-style: none;
         position: absolute;
-        margin: 0px;
-        padding: 0px;
+       
         visibility: hidden;
         display: inline-flex;
         flex-direction: column;
@@ -1281,6 +1280,10 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     }
     header .container label {
         display: block;
+    }
+    .material-symbols-outlined.arrow-icon-1 , .material-symbols-outlined.arrow-icon
+    {
+        font-size: 20px;
     }
 
     header .container {
@@ -1353,7 +1356,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         flex-direction: column;
         
         width: 90%;
-        margin: 0;
+       
         padding: 10px;
         box-shadow: 1px 1px 5px #fff;
 
