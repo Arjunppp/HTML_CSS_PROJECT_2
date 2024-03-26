@@ -21,6 +21,11 @@
     height: 2px;
     background-color: red;
 }
+
+#home ,#product ,#pricing, #contact {
+    display: none;
+}
+
 .sec-rfrnce-sub-cntnt h2::before {
     content: " ";
     display: flex;
@@ -29,7 +34,8 @@
     background-color: red;
     margin-bottom: 20px;
 }
-.sec-onln-apptmnt-bdy-itm:hover h5::after{
+
+.sec-onln-apptmnt-bdy-itm:hover h5::after {
     background-color: #FFF;
 }
 
@@ -42,12 +48,11 @@
     display: none;
 }
 
-header .container label {
+header>.container>label {
     display: none;
 }
 
-.material-symbols-outlined.close-icn
-{
+.material-symbols-outlined.close-icn {
     display: none;
 }
 
@@ -108,7 +113,7 @@ header .container label {
 }
 
 img {
-     width: 100%; 
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -1171,10 +1176,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         display: none;
     }
 
-    .nav-bar,
-    .page-list {
-        gap: 0px;
-    }
+    
 
     .Hdr-btn button {
         padding: 7px 10px;
@@ -1182,9 +1184,8 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         line-height: 16px;
     }
 
-    .page-list link {
-        padding: 8px;
-    }
+
+   
 }
 
 @media screen and (min-width :515px) {
@@ -1201,11 +1202,11 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         /* display: inline-flex;
         flex-direction: column; */
         top: 0;
-        left: -20px     ;
-       
+        left: -20px;
+
         position: absolute;
         opacity: 0;
-       
+
         border-radius: 5px;
         box-shadow: 1px 1px 5px #000;
         background-color: #26335D;
@@ -1215,7 +1216,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     .hme-drp-dwn li a {
         text-decoration: none;
-    
+
         padding: 10px;
     }
 
@@ -1241,7 +1242,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         width: 100%;
     }
 
-  
+
 
     .page-list li a {
         display: flex;
@@ -1255,7 +1256,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         visibility: hidden;
         /* display: inline-flex;
         flex-direction: column; */
-        
+
 
         background-color: #26335D;
         box-shadow: 1px 1px 5px #000;
@@ -1267,6 +1268,11 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     }
 
+
+li label {
+    display: flex;
+    align-items: center;
+}
     ul.hme-drp-dwn li:hover ul.sub-drp-dwn {
         visibility: visible;
         opacity: 1;
@@ -1286,26 +1292,27 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 }
 
 @media (max-width:515px) {
-    ul.sub-drp-dwn
-    {
+    ul.sub-drp-dwn {
         display: none;
     }
-    ul.hme-drp-dwn li:hover ul.sub-drp-dwn {
+
+    /* ul.hme-drp-dwn li:hover ul.sub-drp-dwn {
        display: flex;
        flex-direction: column;
     }
-    .nav-bar ul li:hover .material-symbols-outlined.arrow-icon-1 {
-        transform: rotate(180deg);
-    }
-    ul.hme-drp-dwn li:hover .material-symbols-outlined.arrow-icon {
+     */
 
-        transform: rotate(180deg);
-    }
-    header .container label {
+
+li label {
+    display: flex;
+    align-items: center;
+}
+    header>.container>label {
         display: block;
     }
-    .material-symbols-outlined.arrow-icon-1 , .material-symbols-outlined.arrow-icon
-    {
+
+    .material-symbols-outlined.arrow-icon-1,
+    .material-symbols-outlined.arrow-icon {
         font-size: 20px;
     }
 
@@ -1316,11 +1323,11 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         width: 100%;
         display: flex;
         align-items: center;
-       height: 60px;
+        height: 60px;
         background-color: #26335D;
         justify-content: center;
         z-index: 1;
-    } 
+    }
 
     .nav-bar {
         flex: 1;
@@ -1328,19 +1335,19 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         gap: 30px;
 
     }
-    .ftr-btm
-    {
+
+    .ftr-btm {
         z-index: 1;
     }
 
     .hme-drp-dwn {
-       display: none;
-       list-style: none;
-       
-        
+        display: none;
+        list-style: none;
+
+
     }
-    .hme-drp-dwn a
-    {
+
+    .hme-drp-dwn a {
         text-decoration: none;
     }
 
@@ -1349,87 +1356,101 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
 
     }
-    .hme-drp-dwn li 
-    {
-        padding-left :20px;
+
+    .hme-drp-dwn li {
+        padding-left: 20px;
     }
-   
-   
+
+
     #hmbrgr:checked~.nav-bar ul.page-list {
         display: inline-flex;
         flex-direction: column;
         justify-content: flex-start;
+        /* align-items: flex-start; */
         position: fixed;
-        padding: 15px 0px 0px 15px;
+       
         left: 0px;
-        top: 40px;    
+        top: 40px;
         width: 250px;
         height: 100vh;
         background-color: #26335D;
     }
-    #hmbrgr:checked~ label span.material-symbols-outlined.hmrgr-icn
-    {
+    
+
+    #hmbrgr:checked~label span.material-symbols-outlined.hmrgr-icn {
         display: none;
 
     }
-    #hmbrgr:checked~ label span.material-symbols-outlined.close-icn
-    {
+
+    #hmbrgr:checked~label span.material-symbols-outlined.close-icn {
         display: block;
     }
-   
-   #hmbrgr:checked~ .nav-bar ul.page-list > li:nth-child(1)>a::before
-   {
-    font-family: "Material Symbols Outlined";
-    content: "\e88a";
-    font-size: 18px; 
-    font-weight:normal;
-   }
-   #hmbrgr:checked~ .nav-bar ul.page-list > li:nth-child(2)>a::before
-   {
-    font-family: "Material Symbols Outlined";
-    content: "\e574";
-    font-size: 18px; 
-    font-weight:normal;
-    
-   }
-   #hmbrgr:checked~ .nav-bar ul.page-list > li:nth-child(3)>a::before
-   {
-    font-family: "Material Symbols Outlined";
-    content: "\eaf7";
-    font-size: 18px; 
-    font-weight:normal;
-   }
-   #hmbrgr:checked~ .nav-bar ul.page-list > li:nth-child(4)>a::before
-   {
-    font-family: "Material Symbols Outlined";
-    content: "\e0b0";
-    font-size: 18px; 
-    font-weight:normal;
-   }
+
+    #hmbrgr:checked~.nav-bar ul.page-list>li:nth-child(1) label::before {
+        font-family: "Material Symbols Outlined";
+        content: "\e88a";
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    #hmbrgr:checked~.nav-bar ul.page-list>li:nth-child(2) label::before {
+        font-family: "Material Symbols Outlined";
+        content: "\e574";
+        font-size: 18px;
+        font-weight: normal;
+
+    }
+
+    #hmbrgr:checked~.nav-bar ul.page-list>li:nth-child(3) label::before {
+        font-family: "Material Symbols Outlined";
+        content: "\eaf7";
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    #hmbrgr:checked~.nav-bar ul.page-list>li:nth-child(4) label::before {
+        font-family: "Material Symbols Outlined";
+        content: "\e0b0";
+        font-size: 18px;
+        font-weight: normal;
+    }
+
     .nav-bar ul li {
         position: relative;
     }
-
-    .nav-bar ul li:hover .hme-drp-dwn {
-        
+    .page-list li 
+    {
         display: inline-flex;
+        /* align-items: center; */
+        width: 100%;
         flex-direction: column;
         
+    }
+
+  
+    #home:checked~ul.hme-drp-dwn  ,#product:checked~ul.hme-drp-dwn  , #pricing:checked~ul.hme-drp-dwn ,  #contact:checked~ul.hme-drp-dwn  {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
         width: 100%;
-       
-        
         box-shadow: 1px 1px 5px #000;
 
- }
+    }
+    .nav-bar ul li:hover .material-symbols-outlined.arrow-icon-1 {
+        transform: rotate(180deg);
+    }
+    ul.hme-drp-dwn li:hover .material-symbols-outlined.arrow-icon   {
+
+        transform: rotate(180deg);
+    }
+    
+   
+
     .sub-drp-dwn {
         list-style: none;
     }
-    
-    .page-list li a
-    {
-        display: flex;
-        align-items: center;
-    }
+
+   
 
 
     .bnr_cntnt .h1-style {
@@ -1471,11 +1492,11 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .sec-rfrnce-sub-cntnt p {
         max-width: 83%;
     }
-   
 
 
 
-  
+
+
 
 
 
