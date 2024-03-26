@@ -9,6 +9,26 @@
 
 
 /* Common stylings  */
+.sec-onln-apptmnt-bdy-itm h5::after {
+    content: " ";
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+    gap: 19px;
+    height: 2px;
+    background-color: red;
+}
+.sec-rfrnce-sub-cntnt h2::before {
+    content: " ";
+    display: flex;
+    height: 2px;
+    width: 100%;
+    background-color: red;
+    margin-bottom: 20px;
+}
+.sec-onln-apptmnt-bdy-itm:hover h5::after{
+    background-color: #FFF;
+}
 
 * {
     color: var(--primary-color);
@@ -27,8 +47,6 @@ header .container label {
 {
     display: none;
 }
-
-
 
 
 .common-mar-pad {
@@ -1179,10 +1197,12 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         visibility: hidden;
         /* display: inline-flex;
         flex-direction: column; */
+        top: 0;
+        left: -20px     ;
        
-        
         position: absolute;
         opacity: 0;
+       
         border-radius: 5px;
         box-shadow: 1px 1px 5px #000;
         background-color: #26335D;
@@ -1192,13 +1212,15 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     .hme-drp-dwn li a {
         text-decoration: none;
+    
         padding: 10px;
     }
 
     .nav-bar ul li:hover .hme-drp-dwn {
 
         visibility: visible;
-       
+        top: 40px;
+        left: 0;
         opacity: 1;
 
 
@@ -1235,8 +1257,8 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         background-color: #26335D;
         box-shadow: 1px 1px 5px #000;
         border-radius: 5px;
-        left: 130px;
-        top: 10px;
+        top: 0;
+        left: 0;
         transition: all 0.3s ease-in-out;
         opacity: 0;
 
@@ -1245,6 +1267,8 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     ul.hme-drp-dwn li:hover ul.sub-drp-dwn {
         visibility: visible;
         opacity: 1;
+        left: 130px;
+        top: 10px;
     }
 
     ul.hme-drp-dwn li:hover .material-symbols-outlined.arrow-icon {
@@ -1326,10 +1350,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     {
         padding-left :20px;
     }
-    #hmbrgr:checked~label span.material-symbols-outlined.hmrgr-icn  
-    {
-       display: none;
-    }
+   
    
     #hmbrgr:checked~.nav-bar ul.page-list {
         display: inline-flex;
@@ -1341,6 +1362,15 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         width: 250px;
         height: 100vh;
         background-color: #26335D;
+    }
+    #hmbrgr:checked~ label span.material-symbols-outlined.hmrgr-icn
+    {
+        display: none;
+
+    }
+    #hmbrgr:checked~ label span.material-symbols-outlined.close-icn
+    {
+        display: block;
     }
    
   
