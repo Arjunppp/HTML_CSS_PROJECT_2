@@ -1360,6 +1360,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         flex-direction: column;
         justify-content: flex-start;
         position: fixed;
+        padding: 15px 0px 0px 15px;
         left: 0px;
         top: 40px;    
         width: 250px;
@@ -1389,6 +1390,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     content: "\e574";
     font-size: 18px; 
     font-weight:normal;
+    
    }
    #hmbrgr:checked~ .nav-bar ul.page-list > li:nth-child(3)>a::before
    {
