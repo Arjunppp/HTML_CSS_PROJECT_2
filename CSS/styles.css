@@ -9,6 +9,9 @@
 
 
 /* Common stylings  */
+
+
+
 .sec-onln-apptmnt-bdy-itm h5::after {
     content: " ";
     display: flex;
@@ -1373,7 +1376,34 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         display: block;
     }
    
-  
+   #hmbrgr:checked~ .nav-bar ul.page-list :nth-child(1)>a::before
+   {
+    font-family: "Material Symbols Outlined";
+    content: "\e88a";
+    font-size: 18px; 
+    font-weight:normal;
+   }
+   #hmbrgr:checked~ .nav-bar ul.page-list :nth-child(2)>a::before
+   {
+    font-family: "Material Symbols Outlined";
+    content: "\e574";
+    font-size: 18px; 
+    font-weight:normal;
+   }
+   #hmbrgr:checked~ .nav-bar ul.page-list :nth-child(3)>a::before
+   {
+    font-family: "Material Symbols Outlined";
+    content: "\eaf7";
+    font-size: 18px; 
+    font-weight:normal;
+   }
+   #hmbrgr:checked~ .nav-bar ul.page-list :nth-child(4)>a::before
+   {
+    font-family: "Material Symbols Outlined";
+    content: "\e0b0";
+    font-size: 18px; 
+    font-weight:normal;
+   }
     .nav-bar ul li {
         position: relative;
     }
