@@ -1336,9 +1336,9 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         flex-direction: column;
         justify-content: flex-start;
         position: fixed;
-        left: 13px;
+        left: 0px;
         top: 40px;    
-        width: 150px;
+        width: 250px;
         height: 100vh;
         background-color: #26335D;
         box-shadow: 1px 1px 5px #000;
