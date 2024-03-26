@@ -1368,7 +1368,7 @@ li label {
         justify-content: flex-start;
         /* align-items: flex-start; */
         position: fixed;
-       
+        padding : 25px 0px 0px 25px;
         left: 0px;
         top: 40px;
         width: 250px;
