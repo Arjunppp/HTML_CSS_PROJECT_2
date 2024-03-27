@@ -18,7 +18,7 @@
 .sec-onln-apptmnt-bdy-itm h5::after {
     content: " ";
     display: flex;
-    width: 100%;
+    max-width: 65px;
     margin: 10px 0;
     gap: 19px;
     height: 2px;
@@ -1307,11 +1307,6 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         left: 130px;
         top: 10px;
     }
-/* 
-    ul.hme-drp-dwn li:hover .material-symbols-outlined.arrow-icon {
-
-        transform: rotate(180deg);
-    } */
 
 
 
@@ -1376,11 +1371,17 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .ftr-btm {
         z-index: 1;
     }
+    .page-list
+    {
+        position: relative;
+    }
 
     .hme-drp-dwn {
         display: none;
         list-style: none;
-
+        
+        width: 10px;
+       
 
     }
 
@@ -1402,6 +1403,8 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         display: flex;
         align-items: center;
     }
+   
+
 
 
     #hmbrgr:checked~.nav-bar ul.page-list {
@@ -1413,10 +1416,11 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         position: fixed;
         padding: 25px 0px 0px 25px;
         left: 0px;
-        top: 40px;
+        top: 51px;
         width: 250px;
         height: 100vh;
         background-color: #26335D;
+        animation:page-list .3s ease-in-out ; 
     }
 
 
@@ -1464,7 +1468,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     .page-list li {
         display: inline-flex;
-        /* align-items: center; */
+       
         width: 100%;
         flex-direction: column;
 
@@ -1478,10 +1482,26 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
+         animation:hme-drp-dwn .3s ease-in-out ; 
         width: 100%;
         box-shadow: 1px 1px 5px #000;
 
     }
+   
+
+     @keyframes hme-drp-dwn {
+        
+        from {opacity: 0;}
+        to{opacity:1; }
+        
+    }
+    @keyframes page-list{
+        
+        from {opacity: 0;width:0px;}
+        to{opacity:1; width: 250px;}
+        
+    }
+      } 
 
     #sub-product:checked~ul.sub-drp-dwn {
         display: block;
@@ -1523,9 +1543,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .Hdr-btn :nth-child(1) {
-        display: none;
-    }
+    
 
     .sec-sales-bdy-grid {
 
@@ -1561,4 +1579,3 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
 
 
-}
