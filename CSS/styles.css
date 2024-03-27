@@ -22,7 +22,7 @@
     background-color: red;
 }
 
-#home ,#product ,#pricing, #contact {
+#home ,#product ,#pricing, #contact ,#sub-product {
     display: none;
 }
 
@@ -214,9 +214,6 @@ img {
     padding: 10px 0;
 }
 
-.nav-bar>ul>li :hover {
-    color: #1BC678;
-}
 
 
 .page-list {
@@ -1194,6 +1191,10 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         position: relative;
 
     }
+    .nav-bar>ul>li :hover {
+        color: #1BC678;
+    } 
+    
 
     .hme-drp-dwn {
         list-style: none;
@@ -1272,6 +1273,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 li label {
     display: flex;
     align-items: center;
+   
 }
     ul.hme-drp-dwn li:hover ul.sub-drp-dwn {
         visibility: visible;
@@ -1296,16 +1298,14 @@ li label {
         display: none;
     }
 
-    /* ul.hme-drp-dwn li:hover ul.sub-drp-dwn {
-       display: flex;
-       flex-direction: column;
-    }
-     */
+   
 
 
-li label {
+ul.page-list>li>label {
     display: flex;
     align-items: center;
+    font-size: 17px;
+    font-weight: 700;
 }
     header>.container>label {
         display: block;
@@ -1360,13 +1360,18 @@ li label {
     .hme-drp-dwn li {
         padding-left: 20px;
     }
+    .hme-drp-dwn li label.h6-style
+    {
+        display: flex;
+        align-items: center;
+    }
 
 
     #hmbrgr:checked~.nav-bar ul.page-list {
         display: inline-flex;
         flex-direction: column;
         justify-content: flex-start;
-        /* align-items: flex-start; */
+        
         position: fixed;
         padding : 25px 0px 0px 25px;
         left: 0px;
@@ -1389,29 +1394,29 @@ li label {
     #hmbrgr:checked~.nav-bar ul.page-list>li:nth-child(1) label::before {
         font-family: "Material Symbols Outlined";
         content: "\e88a";
-        font-size: 18px;
+        font-size: 20px;
         font-weight: normal;
     }
 
-    #hmbrgr:checked~.nav-bar ul.page-list>li:nth-child(2) label::before {
+    #hmbrgr:checked~.nav-bar>ul.page-list>li:nth-child(2)>label::before {
         font-family: "Material Symbols Outlined";
         content: "\e574";
-        font-size: 18px;
+        font-size: 20px;
         font-weight: normal;
 
     }
 
-    #hmbrgr:checked~.nav-bar ul.page-list>li:nth-child(3) label::before {
+    #hmbrgr:checked~.nav-bar>ul.page-list>li:nth-child(3) label::before {
         font-family: "Material Symbols Outlined";
         content: "\eaf7";
-        font-size: 18px;
+        font-size: 20px;
         font-weight: normal;
     }
 
     #hmbrgr:checked~.nav-bar ul.page-list>li:nth-child(4) label::before {
         font-family: "Material Symbols Outlined";
         content: "\e0b0";
-        font-size: 18px;
+        font-size: 20px;
         font-weight: normal;
     }
 
@@ -1436,15 +1441,22 @@ li label {
         box-shadow: 1px 1px 5px #000;
 
     }
-    .nav-bar ul li:hover .material-symbols-outlined.arrow-icon-1 {
-        transform: rotate(180deg);
-    }
-    ul.hme-drp-dwn li:hover .material-symbols-outlined.arrow-icon   {
-
-        transform: rotate(180deg);
+    #sub-product:checked~ul.sub-drp-dwn
+    {
+        display: block;
     }
     
-   
+    
+   #product:checked~ label span.material-symbols-outlined.arrow-icon-1  , #sub-product:checked~ label span.material-symbols-outlined.arrow-icon-1 
+   {
+    transform: rotate(180deg);
+    color: #1BC678;
+   }
+   #sub-product:checked~ label,  #product:checked~ label ,#home:checked~ label ,#pricing:checked~ label, #contact:checked~ label
+   {
+    
+    color:#1BC678;
+   }
 
     .sub-drp-dwn {
         list-style: none;
