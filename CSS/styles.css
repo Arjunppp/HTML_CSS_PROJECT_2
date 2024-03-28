@@ -1210,6 +1210,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     .page-list {
         gap: 0px;
+        justify-content: center;
 
     }
 
