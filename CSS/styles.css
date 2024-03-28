@@ -37,13 +37,14 @@
     content: " ";
     display: flex;
     height: 2px;
-    max-width: 100px;
+   
     background-color: red;
     margin-bottom: 20px;
 }
 
 .sec-onln-apptmnt-bdy-itm:hover h5::after {
     background-color: #FFF;
+    cursor: pointer;
 }
 
 .page-list  button
@@ -946,9 +947,20 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 /* Media queries */
 
 @media screen and (max-width:1020px) {
+    .sec-sales-bdy-grid-item-discrptn>p {
+        max-width: none;
+    }
+    .sec-sales-bdy-grid-item
+    {
+        flex: 1;
+    }
+    .sec-sales-bdy-grid-item-discrptn
+    {
+        flex: 1;
+    }
     .sec-sales-bdy {
 
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         display: inline-grid;
     }
 
@@ -962,8 +974,8 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     .sec-sales-bdy-grid {
 
-        justify-self: center;
-        flex: start;
+        display: flex;
+        gap: 20px;
 
     }
     .nav-bar
@@ -975,11 +987,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         display: flex;
     }
 
-    .sec-onln-apptmnt-bdy {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 40px;
-    }
+   
 
     .sec-hd {
         display: inline-flex;
@@ -988,7 +996,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     }
 
     .sec-hd p {
-        max-width: 500px;
+        /* max-width: 500px; */
         text-align: center;
     }
 
@@ -1033,6 +1041,9 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 }
 
 @media(max-width : 850px) {
+    .sec-pricing-bdy-sub-cntnr ul :nth-child(5) h6 {
+        max-width: none;
+    }
     .bnr_cntnt .h1-style {
         font-size: 40px;
         line-height: 40px;
@@ -1117,7 +1128,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     }
 
     .sec-pricing-bdy-sub-cntnr p {
-        max-width: 200px;
+        max-width: none;
     }
 
     .sec-expert-bdy {
@@ -1156,9 +1167,24 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         gap: 50px;
 
     }
+    .sec-onln-apptmnt-bdy {
+        flex-wrap: wrap;
+        
+        
+    }
+    .sec-onln-apptmnt-bdy-itm
+    {
+        width: 45%;
+    }
+    .sec-onln-apptmnt-bdy .sec-onln-apptmnt-bdy-itm:nth-child(even) {
+        position: relative;
+        top: 0px;
+    }
+    
     .page-list
     {
         gap: 0px;
+      
     }
     .nav-bar .h3-style
     {
@@ -1199,7 +1225,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     .Hdr-btn :first-child {
         display: none;
-    }
+    } 
 
 
 
@@ -1215,6 +1241,8 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
 @media screen and (min-width :515px) {
 
+   
+
     .nav-bar ul li {
         position: relative;
 
@@ -1223,6 +1251,8 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .nav-bar>ul>li :hover {
         color: #1BC678;
     }
+   
+   
 
 
     .hme-drp-dwn {
@@ -1261,6 +1291,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         left: 0;
         opacity: 1;
 
+        cursor: pointer;
 
 
     }
@@ -1324,6 +1355,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         opacity: 1;
         left: 130px;
         top: 10px;
+        cursor: pointer;
     }
 
 
@@ -1333,10 +1365,22 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 }
 
 @media (max-width:515px) {
+
+    .bnr_cntnt_btn
+    {
+        flex-direction: column;
+    }
     ul.sub-drp-dwn {
         display: none;
     }
-
+    .sec-onln-apptmnt-bdy-itm
+    {
+        width:100%;
+    }
+    header .container>label>span
+    {
+        display: flex;
+    }
 
    .btn-side-bar
    {
@@ -1565,7 +1609,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     .sec-sales-bdy-grid {
 
-        width: 75%;
+       display: grid;
 
     }
 
