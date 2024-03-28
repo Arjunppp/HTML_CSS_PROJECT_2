@@ -1504,7 +1504,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         align-items: flex-start;
         gap: 30px;
         position: fixed;
-        padding: 25px 0px 0px 25px;
+        padding: 25px 0px 25px 25px;
         left: 0px;
         top: 51px;
         width: 250px;
