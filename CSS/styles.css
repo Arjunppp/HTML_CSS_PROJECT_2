@@ -1499,6 +1499,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
     #hmbrgr:checked~.nav-bar ul.page-list {
         display: inline-flex;
+        overflow-y: auto;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -1600,7 +1601,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
         to {
             opacity: 1;
-            width: 250px;
+            width: 220px;
         }
 
     }
