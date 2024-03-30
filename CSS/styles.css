@@ -1111,7 +1111,14 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .sec-rfrnce-img {
         width: 50%;
     }
+    .sec-onln-apptmnt-bdy {
+        flex-wrap: wrap;
 
+
+    }
+    .sec-onln-apptmnt-bdy-itm {
+        width: 48%;
+    }
     .sec-rfrnce-sub-cntnt {
         display: inline-flex;
         
@@ -1160,6 +1167,10 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .hrzntl-rule {
         width: 80px;
     }
+    .sec-onln-apptmnt-bdy .sec-onln-apptmnt-bdy-itm:nth-child(even) {
+       
+        top: 0px;
+    }
 
 }
 
@@ -1169,7 +1180,9 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .sec-rfrnce-img {
         display: none;
     }
-
+    .sec-onln-apptmnt-bdy-itm {
+        width: 47%;
+    }
     .ftr-top-cntnr {
         /* display: inline-grid;
         grid-template-columns: repeat(2, 2fr);
@@ -1192,15 +1205,9 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         width: 50%;
     }
 
-    .sec-onln-apptmnt-bdy {
-        flex-wrap: wrap;
+  
 
-
-    }
-
-    .sec-onln-apptmnt-bdy-itm {
-        width: 48%;
-    }
+   
 
     .sec-onln-apptmnt-bdy .sec-onln-apptmnt-bdy-itm:nth-child(even) {
         position: relative;
@@ -1578,6 +1585,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         flex-direction: column;
         gap: 10px;
         align-items: flex-start;
+        position:relative;
         animation: hme-drp-dwn .3s ease-in-out;
         width: 50%;
         box-shadow: 1px 1px 5px #000;
@@ -1588,10 +1596,12 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
 
         from {
             opacity: 0;
+           
         }
 
         to {
             opacity: 1;
+           
         }
 
     }
