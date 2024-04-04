@@ -1648,6 +1648,11 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
         flex-direction: column;
         gap: 10px;
     }
+    #sub-product:checked~label span 
+    {
+        transform: rotate(180deg);
+        color: #1BC678;
+    }
 
 
     #product:checked~label span.material-symbols-outlined.arrow-icon-1,
