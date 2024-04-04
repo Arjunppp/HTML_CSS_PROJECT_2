@@ -1491,9 +1491,10 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     .hme-drp-dwn>li {
         padding-left: 27px;
     }
+    
     .sub-drp-dwn>li
     {
-        padding-left: 10px;
+        padding-left: 15px;
     }
     .hme-drp-dwn li label.h6-style {
         display: flex;
