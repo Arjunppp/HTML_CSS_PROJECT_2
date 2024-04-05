@@ -560,7 +560,7 @@ i.fa-solid.fa-star.fnt {
 
 .btn_common.bnr-btn.disp-btn {
     border-radius: 30px;
-    width: 87%;
+    width: 66%;
     display: flex;
     gap: 5px;
 }
@@ -1031,7 +1031,7 @@ hr.hrzntl-rule.hrzntl-sec-rfrnce {
     }
     .sec-onln-apptmnt-bdy-itm h5 {
         position: relative;
-        height: 20vh; 
+        
 
     }
     .sec-onln-apptmnt-bdy-itm h5::after {
